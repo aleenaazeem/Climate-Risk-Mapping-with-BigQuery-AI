@@ -1,11 +1,11 @@
 # 🌍 Real-Time Climate Risk Mapping with BigQuery AI
 
-## 📌 Overview
+## Overview
 This project leverages **Google BigQuery AI** to integrate **NOAA climate data** with **GDELT global news sentiment** in order to deliver **real-time climate risk intelligence**. Using BigQuery’s **vector search, embeddings, and generative AI**, we detect anomalies (heatwaves, floods, storms), connect them to relevant news, and generate concise **AI-powered climate briefs**.
 
 ---
 
-## 🚀 Features
+## Features
 - **Climate Anomaly Detection**: NOAA GSOD daily weather observations → anomaly flags (heatwaves, heavy rain, storms).
 - **Semantic News Matching**: Embeds GDELT news articles and retrieves semantically similar events using **BigQuery Vector Index**.
 - **AI Climate Briefs**: Auto-generated regional summaries via `ML.GENERATE_TEXT` (Gemini models).
@@ -13,7 +13,7 @@ This project leverages **Google BigQuery AI** to integrate **NOAA climate data**
 
 ---
 
-## ⚙️ Technical Architecture
+## Technical Architecture
 1. **Data Ingestion**
    - NOAA GSOD (`bigquery-public-data.noaa_gsod`) → climate anomalies.
    - GDELT Events & GKG (`gdelt-bq.gdeltv2`) → news + sentiment.
@@ -32,7 +32,7 @@ This project leverages **Google BigQuery AI** to integrate **NOAA climate data**
 
 ---
 
-## 📊 Example Query Workflows
+## Example Query Workflows
 
 **Detect anomalies**
 ```sql
